@@ -1,0 +1,17 @@
+# Core numeric + torch first
+numpy<2
+torch==2.2.2
+
+# HuggingFace stack
+transformers==4.41.0
+accelerate==1.12.0
+datasets==3.3.2
+huggingface_hub
+peft==0.10.0
+
+# Sentence-transformers on top of HF
+sentence-transformers==3.0.1
+
+# Utilities last
+scikit-learn
+wandb
