@@ -107,20 +107,36 @@ if __name__ == '__main__':
             report_to="none"
         )
     else:
+        NUM_EPOCHS = 5
+        LEARNING_RATE = 2e-5
+        BATCH_SIZE = 16
         args = SentenceTransformerTrainingArguments(
             output_dir="models/finetune-mrpc",
             report_to="wandb",
             load_best_model_at_end=True, # Load best checkpoint at end
             metric_for_best_model="eval_loss",
             greater_is_better=False,  # Lower loss is better
-            num_train_epochs=5,
-            per_device_train_batch_size=32,
-            learning_rate=2e-5,
+            num_train_epochs=NUM_EPOCHS,
+            per_device_train_batch_size=BATCH_SIZE,
+            learning_rate=LEARNING_RATE,
+            eval_strategy="epoch",
+            logging_strategy="epoch",
             warmup_ratio=0.1
         )
     
-    setup_wandb()
-    wandb.init(project="minilm-finetune") 
+        setup_wandb()
+        wandb.init(project="minilm-finetune") 
+        wandb.init(
+            project="minilm-finetune",
+            config={
+                "learning_rate": LEARNING_RATE,
+                "epochs": NUM_EPOCHS,
+                "batch_size": BATCH_SIZE,
+                "loss": "CoSENTLoss",
+                "model": "all-MiniLM-L6-v2",
+                "dataset": "MRPC"
+            }
+        )
 
     ds = ["nyu-mll/glue", "mrpc"]
     embd_model = EmbeddingModel(model, ds, debug=debugging)
