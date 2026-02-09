@@ -117,7 +117,8 @@ if __name__ == '__main__':
         )
     
     setup_wandb()
-
+    wandb.init(project="minilm-finetune") 
+    
     ds = ["nyu-mll/glue", "mrpc"]
     embd_model = EmbeddingModel(model, ds, debug=debugging)
     embd_model.eval()
