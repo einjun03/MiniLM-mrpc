@@ -110,6 +110,9 @@ if __name__ == '__main__':
         args = SentenceTransformerTrainingArguments(
             output_dir="models/finetune-mrpc",
             report_to="wandb",
+            load_best_model_at_end=True, # Load best checkpoint at end
+            metric_for_best_model="eval_loss",
+            greater_is_better=False,  # Lower loss is better
             num_train_epochs=5,
             per_device_train_batch_size=32,
             learning_rate=2e-5,
@@ -118,7 +121,7 @@ if __name__ == '__main__':
     
     setup_wandb()
     wandb.init(project="minilm-finetune") 
-    
+
     ds = ["nyu-mll/glue", "mrpc"]
     embd_model = EmbeddingModel(model, ds, debug=debugging)
     embd_model.eval()
