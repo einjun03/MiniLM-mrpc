@@ -1,87 +1,82 @@
 import logging
-from contextlib import nullcontext
-
 import torch
+from contextlib import nullcontext
 from sentence_transformers.evaluation import InformationRetrievalEvaluator
+import numpy as np 
 
 logger = logging.getLogger(__name__)
-
 
 class CleanInformationRetrievalEvaluator(InformationRetrievalEvaluator):
     def __init__(self, queries, corpus, relevant_docs, query_exclusions, **kwargs):
         super().__init__(queries, corpus, relevant_docs, **kwargs)
         self.corpus_ids_map = {cid: idx for idx, cid in enumerate(self.corpus_ids)}
-        # Always exclude the query's own corpus entry (qid == cid)
+        
+        # Ensure every query excludes itself from the haystack
         self.query_exclusions = {}
         for qid, exclusions in query_exclusions.items():
             self.query_exclusions[qid] = list(exclusions)
-            if qid not in self.query_exclusions[qid] and qid in self.corpus_ids_map:
+            # Self-exclusion logic: if the query exists in the corpus, ignore it
+            if qid in self.corpus_ids_map and qid not in self.query_exclusions[qid]:
                 self.query_exclusions[qid].append(qid)
 
-    def compute_metrices(self, model, corpus_model=None, corpus_embeddings=None):
+    def compute_metrics(self, model, corpus_model=None, corpus_embeddings=None):
+        """
+        Calculates the IR metrics. The internal attributes for strings are 
+        'queries_list' and 'corpus_list'.
+        """
         if corpus_model is None:
             corpus_model = model
 
-        max_k = max(
-            max(self.mrr_at_k),
-            max(self.ndcg_at_k),
-            max(self.accuracy_at_k),
-            max(self.precision_recall_at_k),
-            max(self.map_at_k),
+        # 1. Encode Queries
+        # Note: self.queries_list is the internal list of strings
+        query_embeddings = model.encode(
+            self.queries_list, 
+            show_progress_bar=self.show_progress_bar, 
+            batch_size=self.batch_size, 
+            convert_to_tensor=True
         )
 
-        # Encode queries
-        with nullcontext() if self.truncate_dim is None else model.truncate_sentence_embeddings(self.truncate_dim):
-            query_embeddings = model.encode(
-                self.queries,
-                show_progress_bar=self.show_progress_bar,
-                batch_size=self.batch_size,
-                convert_to_tensor=True,
-            )
-
-        # Encode full corpus
+        # 2. Encode Corpus
         if corpus_embeddings is None:
-            with nullcontext() if self.truncate_dim is None else corpus_model.truncate_sentence_embeddings(self.truncate_dim):
-                corpus_embeddings = corpus_model.encode(
-                    self.corpus,
-                    show_progress_bar=self.show_progress_bar,
-                    batch_size=self.batch_size,
-                    convert_to_tensor=True,
-                )
-
-        queries_result_list = {}
-        for name, score_function in self.score_functions.items():
-            pair_scores = score_function(query_embeddings, corpus_embeddings)
-
-            # Apply exclusions: set excluded corpus scores to -inf before ranking
-            for i, qid in enumerate(self.queries_ids):
-                if qid in self.query_exclusions:
-                    for cid_to_exclude in self.query_exclusions[qid]:
-                        if cid_to_exclude in self.corpus_ids_map:
-                            pair_scores[i][self.corpus_ids_map[cid_to_exclude]] = -float('inf')
-
-            # Get top-k results
-            pair_scores_top_k_values, pair_scores_top_k_idx = torch.topk(
-                pair_scores, min(max_k, len(pair_scores[0])), dim=1, largest=True, sorted=False
+            # Note: self.corpus_list is the internal list of strings
+            corpus_embeddings = corpus_model.encode(
+                self.corpus_list, 
+                show_progress_bar=self.show_progress_bar, 
+                batch_size=self.batch_size, 
+                convert_to_tensor=True
             )
-            pair_scores_top_k_values = pair_scores_top_k_values.cpu().tolist()
-            pair_scores_top_k_idx = pair_scores_top_k_idx.cpu().tolist()
 
-            queries_result_list[name] = []
-            for query_itr in range(len(query_embeddings)):
-                queries_result_list[name].append([
-                    {"corpus_id": self.corpus_ids[idx], "score": score}
-                    for idx, score in zip(pair_scores_top_k_idx[query_itr], pair_scores_top_k_values[query_itr])
-                ])
+        # 3. Compute Similarity & Mask Exclusions
+        from sentence_transformers.util import cos_sim, dot_score
+        score_func = cos_sim if self.main_score_function == 'cosine' else dot_score
+        scores = score_func(query_embeddings, corpus_embeddings)
 
-        logger.info("Queries: {}".format(len(self.queries)))
-        logger.info("Corpus: {}\n".format(len(self.corpus)))
+        for i, qid in enumerate(self.queries_ids):
+            if qid in self.query_exclusions:
+                for cid_to_exclude in self.query_exclusions[qid]:
+                    if cid_to_exclude in self.corpus_ids_map:
+                        idx = self.corpus_ids_map[cid_to_exclude]
+                        scores[i][idx] = -float('inf')
 
-        # Use parent's compute_metrics for MRR, NDCG, etc.
-        scores = {name: self.compute_metrics(queries_result_list[name]) for name in self.score_functions}
+        # 4. Use the parent's logic to calculate the final dict of metrics
+        return self.compute_metrics_from_scores(scores)
 
-        for name in self.score_function_names:
-            logger.info("Score-Function: {}".format(name))
-            self.output_scores(scores[name])
+    def compute_metrics_from_scores(self, scores):
+        """
+        Utility to turn the masked scores back into the standard MRR/Accuracy dict.
+        """
+        scores = scores.cpu().numpy()
+        query_results = {}
+        max_k = max(max(self.mrr_at_k), max(self.accuracy_at_k))
 
-        return scores
+        for i, qid in enumerate(self.queries_ids):
+            # Find Top-K indices
+            top_hits = np.argpartition(scores[i], -max_k)[-max_k:]
+            top_hits = top_hits[np.argsort(scores[i][top_hits])][::-1]
+            
+            query_results[qid] = [
+                {'corpus_id': self.corpus_ids[idx], 'score': scores[i][idx]} 
+                for idx in top_hits
+            ]
+            
+        return self.calculate_metrics(query_results)
