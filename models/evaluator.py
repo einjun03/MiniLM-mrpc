@@ -10,8 +10,13 @@ logger = logging.getLogger(__name__)
 class CleanInformationRetrievalEvaluator(InformationRetrievalEvaluator):
     def __init__(self, queries, corpus, relevant_docs, query_exclusions, **kwargs):
         super().__init__(queries, corpus, relevant_docs, **kwargs)
-        self.query_exclusions = query_exclusions
         self.corpus_ids_map = {cid: idx for idx, cid in enumerate(self.corpus_ids)}
+        # Always exclude the query's own corpus entry (qid == cid)
+        self.query_exclusions = {}
+        for qid, exclusions in query_exclusions.items():
+            self.query_exclusions[qid] = list(exclusions)
+            if qid not in self.query_exclusions[qid] and qid in self.corpus_ids_map:
+                self.query_exclusions[qid].append(qid)
 
     def compute_metrices(self, model, corpus_model=None, corpus_embeddings=None):
         if corpus_model is None:

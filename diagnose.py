@@ -5,7 +5,7 @@ from models import RetrievalModel
 
 def main():
     parser = argparse.ArgumentParser(description="Diagnose ranking failures for a trained model")
-    parser.add_argument("--model_path", type=str, required=True, help="Path to trained model or HF Hub name")
+    parser.add_argument("--model_path", type=str, default="all-MiniLM-L6-v2")
     parser.add_argument("--eval_repo", type=str, default="ejun26/mrpc-clean-retrieval-v2")
     parser.add_argument("--split", type=str, default="test", choices=["validation", "test"])
     parser.add_argument("--num_queries", type=int, default=5)
