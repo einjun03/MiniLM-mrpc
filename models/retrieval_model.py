@@ -8,19 +8,23 @@ from sentence_transformers import (
     SentenceTransformerTrainer
 )
 print("loaded 2/3")
-from sentence_transformers.losses import OnlineContrastiveLoss
+from sentence_transformers.losses import OnlineContrastiveLoss, CoSENTLoss
 print("loaded 3/3")
 from sentence_transformers.evaluation import InformationRetrievalEvaluator
 
 
 class RetrievalModel:
-    def __init__(self, model, train_dt, eval_repo, debug=False, seed=42, margin=0.5, use_custom_evaluator=False):
+    LOSS_FUNCTIONS = {
+        "CoSENTLoss": lambda model, **kwargs: CoSENTLoss(model=model),
+        "OnlineContrastiveLoss": lambda model, **kwargs: OnlineContrastiveLoss(model=model, margin=kwargs.get("margin", 0.5)),
+    }
+
+    def __init__(self, model, train_dt, eval_repo, debug=False, seed=42, margin=0.5, use_custom_evaluator=False, loss_fn="CoSENTLoss"):
         self.model = model
         self.debug = debug
         self.use_custom_evaluator = use_custom_evaluator
 
         # 1. Load Training Data (Augmented Pairs)
-        # Using your 'training' config which has sentence1, sentence2, label
         self.train_dt = train_dt
         if self.debug:
             self.train_dt = self.train_dt.shuffle(seed=seed).select(range(50))
@@ -29,8 +33,9 @@ class RetrievalModel:
         self.eval_repo = eval_repo
 
         # 3. Initialize Loss Function
-        # OnlineContrastiveLoss is great for pairs; it effectively mines hard negatives within the batch
-        self.loss_fn = OnlineContrastiveLoss(model=self.model, margin=margin)
+        if loss_fn not in self.LOSS_FUNCTIONS:
+            raise ValueError(f"Unknown loss function '{loss_fn}'. Must be one of: {list(self.LOSS_FUNCTIONS.keys())}")
+        self.loss_fn = self.LOSS_FUNCTIONS[loss_fn](model=self.model, margin=margin)
 
     def prepare_ir_evaluator(self, split_name):
         """

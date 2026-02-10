@@ -22,6 +22,7 @@ def main():
     parser.add_argument("--batch_size", type=int, default=32)
     parser.add_argument("--warmup_ratio", type=float, default=0.1)
     parser.add_argument("--margin", type=float, default=0.5, help="Margin for OnlineContrastiveLoss")
+    parser.add_argument("--loss_fn", type=str, default="CoSENTLoss", help="Loss function: CoSENTLoss or OnlineContrastiveLoss")
     parser.add_argument("--output_dir", type=str, default="../models/finetune-mrpc-ir")
     
     # Eval & Save Strategy
@@ -91,7 +92,7 @@ def main():
 
     # 4. Initialize Pipeline and Start Training
     # (The RetrievalModel uses your custom IR evaluator internally)
-    pipeline = RetrievalModel(model, train_ds, args_cmd.eval_repo, debug=args_cmd.debug, margin=args_cmd.margin, use_custom_evaluator=args_cmd.use_custom_evaluator)
+    pipeline = RetrievalModel(model, train_ds, args_cmd.eval_repo, debug=args_cmd.debug, margin=args_cmd.margin, use_custom_evaluator=args_cmd.use_custom_evaluator, loss_fn=args_cmd.loss_fn)
     
     print("Starting Training...")
     pipeline.train(training_args)

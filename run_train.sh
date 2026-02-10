@@ -17,5 +17,5 @@ fi
 
 echo "===== Starting training ====="
 # $@ allows you to pass arguments through this script to the python command
-python3.11 train.py "$@" 
+python3 train.py "$@" 
 echo "===== Training finished ====="
