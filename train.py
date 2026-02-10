@@ -36,6 +36,7 @@ def main():
     parser.add_argument("--debug", action="store_true", help="Run a fast sanity check with tiny data")
     parser.add_argument("--run_name", type=str, default=None, help="Custom name for WandB run")
     parser.add_argument("--use_wandb", action="store_true", help="Enable Weights & Biases logging")
+    parser.add_argument("--use_custom_evaluator", action="store_true", help="Use CleanInformationRetrievalEvaluator with corpus exclusions")
 
     # Hugging Face Hub
     parser.add_argument("--push_to_hub", action="store_true", help="Push the trained model to Hugging Face Hub")
@@ -63,7 +64,7 @@ def main():
         
         # Checkpointing logic
         load_best_model_at_end=True,
-        metric_for_best_model="mrpc-validation-retrieval_cosine_mrr@10",
+        metric_for_best_model="mrpc-validation-clean-v2_cosine_mrr@10" if args_cmd.use_custom_evaluator else "mrpc-validation-retrieval_cosine_mrr@10",
         greater_is_better=True,  # Crucial: MRR is "higher is better"
         
         report_to="wandb" if args_cmd.use_wandb else "none",
@@ -90,7 +91,7 @@ def main():
 
     # 4. Initialize Pipeline and Start Training
     # (The RetrievalModel uses your custom IR evaluator internally)
-    pipeline = RetrievalModel(model, train_ds, args_cmd.eval_repo, debug=args_cmd.debug, margin=args_cmd.margin)
+    pipeline = RetrievalModel(model, train_ds, args_cmd.eval_repo, debug=args_cmd.debug, margin=args_cmd.margin, use_custom_evaluator=args_cmd.use_custom_evaluator)
     
     print("Starting Training...")
     pipeline.train(training_args)
