@@ -94,3 +94,44 @@ class RetrievalModel:
         results = test_evaluator(self.model)
         pprint(results)
         return results
+    
+    @staticmethod
+    def diagnose_ranking_failures(model, evaluator, num_queries=5):
+        """
+        Prints the Top 5 results for queries where the model failed to get Rank #1.
+        """
+        from sentence_transformers.util import cos_sim
+
+        model.eval()
+        # 1. Get embeddings (evaluator.corpus and evaluator.queries are lists)
+        corpus_embeddings = model.encode(evaluator.corpus, convert_to_tensor=True)
+        query_embeddings = model.encode(evaluator.queries[:num_queries], convert_to_tensor=True)
+
+        # 2. Compute Cosine Similarity
+        scores = cos_sim(query_embeddings, corpus_embeddings)
+
+        # 3. Apply exclusions if using custom evaluator
+        if hasattr(evaluator, 'query_exclusions'):
+            for i, qid in enumerate(evaluator.queries_ids[:num_queries]):
+                if qid in evaluator.query_exclusions:
+                    for cid_to_exclude in evaluator.query_exclusions[qid]:
+                        if cid_to_exclude in evaluator.corpus_ids_map:
+                            scores[i][evaluator.corpus_ids_map[cid_to_exclude]] = -1.0
+
+        # 4. Analyze results
+        for i, qid in enumerate(evaluator.queries_ids[:num_queries]):
+            print(f"\n{'='*50}")
+            print(f"QUERY {qid}: {evaluator.queries[i]}")
+
+            gold_cids = evaluator.relevant_docs[qid]
+            top_values, top_indices = scores[i].topk(5)
+
+            print("\nTOP 5 RETRIEVED:")
+            for rank, (score, idx) in enumerate(zip(top_values, top_indices), 1):
+                cid = evaluator.corpus_ids[idx]
+                text = evaluator.corpus[idx]
+                is_gold = " [GOLD]" if cid in gold_cids else ""
+                print(f"  {rank}. [{score:.4f}] {text}{is_gold}")
+
+            if evaluator.corpus_ids[top_indices[0]] not in gold_cids:
+                print(f"\n  FAILED: Gold match was not #1.")
