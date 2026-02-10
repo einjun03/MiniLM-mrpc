@@ -1,0 +1,103 @@
+=== MRPC TEST CLIQUES (Size > 2) ===
+Total Large Groups: 20
+
+Group ID 6 | Size: 3
+  - Consumers would still have to get a descrambling security card from their cable operator to plug into the set .
+  - To watch pay television , consumers would insert into the set a security card provided by their cable service .
+  - Consumers still would have to get a descrambling security card from their cable operator to plug into the set .
+
+Group ID 166 | Size: 3
+  - There is one drug on the market for macular degeneration , Visudyne , and it is approved for the treatment of only one subtype that represents a minority of cases .
+  - There is only one drug on the market for macular degeneration , and it is approved to treat only one subtype that represents a minority of cases .
+  - There is only one drug on the market for macular degeneration , and it is approved for the treatment of one subtype representing a minority of cases .
+
+Group ID 221 | Size: 3
+  - But he said labor would see whether other senators can increase the value of awards proposed by Hatch and create a mechanism to ensure the fund remains solvent .
+  - Democrats now hope to increase the value of awards proposed by Hatch and to create a mechanism to ensure the fund remains solvent .
+  - But he said labor wanted other senators to increase the value of awards proposed by Hatch and create a mechanism to ensure the fund remains solvent .
+
+Group ID 272 | Size: 3
+  - In April , it had forecast operating earnings in the range of 60 to 80 cents a share .
+  - Kodak expects earnings of 5 cents to 25 cents a share in the quarter .
+  - Analysts surveyed by Thomson First Call had expected Kodak to earn 68 cents a share for the quarter .
+
+Group ID 275 | Size: 3
+  - It indicates , Robert said , “ that terrorists really don ’ t care who they attack .
+  - " It also indicates the terrorists really don 't care who they attack . "
+  - It indicates , Roberts said , " that terrorists really don 't care who they attack .
+
+Group ID 296 | Size: 3
+  - In addition , Panther includes FileVault , a new feature that secures the contents of a home directory with 128-bit AES encryption .
+  - Other features include FileVault , which secures the contents of a home directory with 128-bit AES encryption on the fly .
+  - A new feature dubbed FileVault , also new in Panther , secures the contents of a user 's home directory with 128-bit AES encryption .
+
+Group ID 402 | Size: 3
+  - The technology-heavy Nasdaq Composite Index < .IXIC > dipped 6.62 points , or 0.34 percent , to 1,917.67 .
+  - The technology-laced Nasdaq Composite Index was off 11.64 points , or 0.60 percent , at 1,912.65 .
+  - The technology-laced Nasdaq Composite Index ( .IXIC : Quote , Profile , Research ) ended off 2.96 points , or 0.15 percent , at 1,921.33 .
+
+Group ID 409 | Size: 3
+  - " That said , however , no actual explosives or other harmful substances will be used . "
+  - Ridge said that no actual explosives or other harmful substances will be used .
+  - Ridge said no real explosives or harmful devices will be used in the exercise .
+
+Group ID 421 | Size: 3
+  - She continued : " Our research neither suggests nor indicates that PCO / PCOS causes lesbianism , only that PCO / PCOS is more prevalent in lesbian women .
+  - Agrawal said her research neither suggests nor indicates PCOS causes lesbianism , only that PCOS is more prevalent in lesbian women .
+  - Agrawal said her research does not suggests that PCOS causes lesbianism , only that PCOS is more prevalent in lesbian women .
+
+Group ID 426 | Size: 3
+  - Jail warden Gene Fischi said said Selenski and Bolton broke their 12-inch-by-18-inch cell window , threw a mattress to the ground and shimmied down the rope to a second-story roof .
+  - Warden Gene Fischi said the two inmates broke a 12-by-18-inch cell window , threw a mattress to the ground , and clambered down the makeshift rope to a second-story roof .
+  - Warden Gene Fischi said the two inmates broke a 12-by-18-inch cell window , threw a mattress to the ground , and shimmied down the makeshift rope to a second-story roof .
+
+Group ID 427 | Size: 3
+  - Trans fats are created when vegetable oil has been partially hydrogenated , solidifying it and increasing the shelf life of certain products .
+  - Trans fats are created when hydrogen is added to vegetable oil , solidifying it and increasing the shelf life of certain products .
+  - Trans fats are created when hydrogen is added to vegetable oil , solidifying it and increasing the shelf life of certain food products .
+
+Group ID 464 | Size: 3
+  - His lawyer , Harriet Newman Cohen , said later that Cuomo " was betrayed and saddened by his wife 's conduct during their marriage . "
+  - Yesterday , Mr. Cuomo 's lawyer , Harriet Newman Cohen , read a statement over the phone : " Mr. Cuomo was betrayed and saddened by his wife 's conduct during their marriage .
+  - Cuomo 's lawyer , Harriet Newman Cohen , said in a statement that he " was betrayed and saddened by his wife 's conduct during their marriage . "
+
+Group ID 469 | Size: 3
+  - State air regulators and three automakers have agreed to settle a lawsuit challenging the nation 's toughest auto emissions program , according to a spokesman for California 's air board .
+  - State air regulators and three automakers have settled a lawsuit challenging the nation 's toughest auto emissions program , a spokesman for California 's air board said Monday .
+  - State air regulators and two automakers have settled a lawsuit challenging the nation 's toughest auto emissions program , a spokesman for California 's air board said Monday .
+
+Group ID 599 | Size: 3
+  - Basically , the plaintiffs did not show that omissions in Merrill 's research caused the claimed losses .
+  - Pollack said yesterday the plaintiffs failed to show that Merrill and Blodget directly caused their losses .
+  - Pollack said the plaintiffs failed to show that Merrill and Blodget directly caused their losses .
+
+Group ID 603 | Size: 3
+  - Dennehy , who transferred to Baylor last year after getting kicked off the team at New Mexico for temper tantrums , became a born-again Christian in June 2002 . "
+  - Dennehy , who transferred to Baylor last year after getting kicked off the University of New Mexico Lobos for temper tantrums , had begun to read the Bible daily .
+  - Dennehy , who transferred to Baylor last year after getting kicked off the University of New Mexico Lobos for temper tantrums , became a born-again Christian in June 2002 .
+
+Group ID 604 | Size: 3
+  - The minister said police had identified the bodies of seven of the 14-member cell believed to have carried out the five almost simultaneous attacks in Casablanca on Friday night .
+  - Mr Sahel said police had identified the bodies of seven of the 14-strong cell believed to have carried out the five almost simultaneous attacks on Saturday .
+  - He said police had identified the bodies of seven of the 14 bombers who launched five almost simultaneous raids Friday night .
+
+Group ID 646 | Size: 3
+  - That fire devastated timber on the reservation , while charring 469,000 acres and destroying 491 homes in surrounding communities .
+  - That fire devastated timber on the reservation , charred 469,000 acres and destroyed 491 homes in surrounding communities .
+  - That fire devastated the reservation , a nearby national forest and several communities , burning 469,000 acres and destroying 491 homes .
+
+Group ID 685 | Size: 3
+  - Agriculture Secretary Luis Lorenzo said there was no damage to the vital rice crop as the harvest had ended .
+  - Agriculture Secretary Luis Lorenzo told Reuters there was no damage to the rice crop as harvesting had just finished .
+  - Agriculture Secretary Luis Lorenzo told Reuters there was no damage to the vital rice crop as harvesting had just finished .
+
+Group ID 708 | Size: 3
+  - " We 're pleased with the judge 's decision , " said Mark Herr , spokesman for Merrill Lynch .
+  - A Merrill Lynch spokesman said " we are pleased with the judge 's decision . "
+  - " We are very pleased with the judge 's decision , " Merrill said yesterday .
+
+Group ID 856 | Size: 3
+  - From Justin to Kelly , a romance starring American Idol winner Kelly Clarkson and runnerup Justin Guarini , opened at No. 11 with $ 2.9-million.
+  - " From Justin to Kelly , " a romance starring " American Idol " winner Kelly Clarkson and runner-up Justin Guarini , bombed with just $ 2.9 million , opening at No. 11 .
+  - " From Justin to Kelly , " starring " American Idol " winner Kelly Clarkson and runner-up Justin Guarini , opened at No. 11 with only $ 2.9 million .
+

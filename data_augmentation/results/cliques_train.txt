@@ -1,0 +1,635 @@
+=== MRPC TRAIN CLIQUES (Size > 2) ===
+Total Large Groups: 124
+
+Group ID 66 | Size: 3
+  - Physicians who violate the ban would be subject to fines and up to two years in prison .
+  - Physicians who perform the procedure would face up to two years in prison , under the bill .
+  - Under the legislation , a physician who performs the procedure could face up to two years in prison .
+
+Group ID 82 | Size: 4
+  - " This deal makes good sense for both companies , " said Brian L. Halla , National 's chairman , president and CEO .
+  - " This deal makes sense for both companies , " Brian Halla , National 's chief executive , said in a statement .
+  - " This deal makes sense for both companies , " Halla said in a prepared statement .
+  - Brian Halla , CEO of NatSemi , claimed the deal made sense for both companies .
+
+Group ID 113 | Size: 3
+  - " We condemn the Governing Council headed by the United States , " Muqtada al Sadr said in a sermon at a mosque .
+  - " We condemn and denounce the Governing Council , which is headed by the United States , " Moqtada al-Sadr said .
+  - " We condemn the Governing Council headed by the United States , " Sadr said in a fiery sermon at Koufa mosque near Najaf .
+
+Group ID 120 | Size: 3
+  - October gasoline prices settled 1.47 cents lower at 78.70 cents a gallon .
+  - October heating oil futures settled .85 cent lower at 69.89 cents a gallon .
+  - October heating oil ended down 0.41 cent to 70.74 cents a gallon .
+
+Group ID 128 | Size: 3
+  - Based on having at least one of the symptoms , most students had been hung over between three and 11 times in the previous year .
+  - On average the students suffered at least one of the 13 symptoms between three and 11 times in the last year .
+  - Based on having at least one of these symptoms , most students were hung over between three and 11 times in the past year .
+
+Group ID 131 | Size: 3
+  - In a televised interview on Wednesday , ECB President Wim Duisenberg said it was too soon to discuss further interest rate cuts in the 12-nation euro zone .
+  - European Central Bank President Wim Duisenberg said in a televised interview that it was too soon to discuss further interest rate cuts in the euro zone .
+  - Duisenberg said in an interview with Bloomberg News ' German television channel released earlier on Wednesday it was too early to discuss further interest rate cuts for the euro zone .
+
+Group ID 141 | Size: 4
+  - President George Bush and top administration officials cited the threat from Iraq 's banned weapons programs as the main justification for war .
+  - President Bush and top administration officials cited the threat from Iraq 's banned weapons programs as the main justification for going to war .
+  - President George W. Bush and top administration officials cited the threat from Iraq 's banned weapons programs as the main justification for going to war .
+  - President Bush and top officials in his administration cited the threat from Iraq 's alleged chemical and biological weapons and nuclear weapons program as the main justification for going to war .
+
+Group ID 150 | Size: 3
+  - " By its actions , the Bush administration threatens to give a bad name to a just war , " Lieberman said .
+  - " By its actions , the Bush administration threatens to give a bad name to a just war , " the Connecticut Democrat told a Capitol Hill news conference .
+  - " By its actions , " Lieberman said , " the Bush administration threatens to give a bad name to a just war . "
+
+Group ID 172 | Size: 3
+  - This is the first time in the United States that five whales have been released simultaneously from a single stranding incident .
+  - On Sunday , the experts will perform the first simultaneous release of five whales from a single stranding incident in the United States .
+  - Today , the experts will perform the United States ' first simultaneous release of five whales from a single stranding incident .
+
+Group ID 177 | Size: 3
+  - " It still remains to be seen whether the revenue recovery will be short- or long-lived , " Sprayregen said .
+  - " It still remains to be seen whether the revenue recovery will be short-lived or long-lived , " Mr. Sprayregen said .
+  - " It remains to be seen whether the revenue recovery will be short- or long-lived , " said James Sprayregen , UAL bankruptcy attorney , in court .
+
+Group ID 190 | Size: 3
+  - The search was concentrated in northeast Pennsylvania , but state trooper Tom Kelly acknowledged that Selenski could have traveled hundreds of miles by now .
+  - The search was concentrated in northeast Pennsylvania , but State Police Trooper Tom Kelly acknowledged that Selenski could have traveled hundreds of miles by now .
+  - The search was concentrated in northeastern Pennsylvania , but State Police Trooper Tom Kelly acknowledged that Selenski could be out of the area .
+
+Group ID 195 | Size: 3
+  - " Apple is working with Oxford Semiconductor and affected drive manufacturers to resolve this issue , which resides in the Oxford 922 chipset , " the company said in a statement .
+  - Apple is working with Oxford Semiconductor and affected drive manufacturers to resolve this issue , which resides in the Oxford 922 chip-set . "
+  - Apple is working with Oxford Semiconductor and affected drive manufacturers to resolve this issue , which resides in the Oxford 922 chipset , " the company statement said .
+
+Group ID 201 | Size: 3
+  - From July 1 , 2002 , to June 30 , 2003 , the organization said it spent $ 114.3 million but took in only $ 39.5 million .
+  - Between July 1 , 2002 and June 30 , 2003 , the Red Cross spent $ 114 million on disaster relief , while taking in only $ 39.5 million .
+  - Since June of last year the Red Cross has spent $ 114 million on disasters , but taken in only $ 40 million in donations .
+
+Group ID 205 | Size: 3
+  - Called " Taxpayers Against the Recall , " it was to be launched Wednesday afternoon outside a Sacramento fire station .
+  - The new effort , Taxpayers Against the Recall , will be formally launched today outside a Sacramento fire station .
+  - The new effort , Taxpayers Against the Recall , will be formally launched Wednesday outside a Sacramento fire station .
+
+Group ID 251 | Size: 3
+  - More than 6,000 companies must get shareholders ' approval before granting their executives options and other stock compensation packages , the Securities and Exchange Commission said Monday .
+  - The Securities and Exchange Commission yesterday said companies trading on the biggest U.S. markets must win shareholder approval before granting stock options and other stock-based compensation plans to corporate executives .
+  - Companies trading on the biggest stock markets must get shareholder approval before granting stock options and other equity compensation under rules cleared yesterday by the Securities and Exchange Commission .
+
+Group ID 253 | Size: 3
+  - " It 's routine for IBM to challenge its internal IT teams to rigorously test new platforms and technologies inside IBM , " she said .
+  - " It is routine for IBM to challenge its internal IT team to rigorously test new platforms and technology inside IBM . "
+  - " I can tell you that it 's routine for IBM to challenge its internal IT teams to rigorously test new platforms and technologies inside IBM . "
+
+Group ID 300 | Size: 4
+  - " Qualcomm has enjoyed many years of selling ... against little or no competition , " Hubach said in the statement .
+  - " Qualcomm has enjoyed many years of selling CDMA chips against little or no competition , " said TI General Counsel Joseph Hubach .
+  - Qualcomm has enjoyed many years of selling CDMA chips against little or no competition .
+  - He said Qualcomm has enjoyed many years of selling CDMA chips without much competition .
+
+Group ID 304 | Size: 3
+  - Tonight , 21-year-old Morgan and as many as 1,200 fellow students at Wheaton College will gather in the gym for the first real dance in the school 's 143-year history .
+  - As many as 1,200 students at Wheaton College will gather in the gym Friday night for the first real dance in the Christian school 's 143-year history .
+  - Come tonight , 21-year-old Morgan and as many as 1,200 fellow students at Wheaton College will gather in the gym for the first real dance in the school 's 143-year history .
+
+Group ID 327 | Size: 3
+  - Recall backers say they have collected 1,600,000 signatures , approaching twice the 897,158 needed to force an election .
+  - Recall advocates say they have turned in 1.6 million signatures to counties .
+  - Recall proponents say they have turned in nearly twice the number of necessary signatures .
+
+Group ID 333 | Size: 3
+  - Congress twice before passed similar restrictions , but President Bill Clinton vetoed them .
+  - Congress twice passed similar bills , but then-President Clinton vetoed them both times .
+  - Congress twice before passed similar restrictions only to see President Bill Clinton veto them .
+
+Group ID 346 | Size: 3
+  - Federal investigators are looking for possible connections between the theft of 1,100 pounds of an explosive chemical from construction companies in Colorado and California in the past week .
+  - Federal agents said Friday they are investigating the thefts of 1,100 pounds of an explosive chemical from construction companies in Colorado and California in the past week .
+  - Federal agents said Friday they are investigating the theft of 1,100 pounds of an explosive chemical from construction companies in Colorado and California in the past week .
+
+Group ID 348 | Size: 3
+  - Investigators were searching his home in Muenster in the presence of his wife when news of his death came , prosecutor Wolfgang Schweer said .
+  - Investigators were searching his home in Muenster in the presence of his wife when news of his death came , prosecutor Wolfgang Schweer told The Associated Press .
+  - A prosecutor said investigators were searching his home in Muenster in the presence of his wife when news of his death arrived .
+
+Group ID 353 | Size: 3
+  - General Jeffrey said he would donate his military pension to charity for the period he was in office at Yarralumla .
+  - General Jeffery announced he would give his substantial military pension accumulated over 40 years to charity during his stay at Government House .
+  - Maj-Gen Jeffery said he would give his military pension to charity while he served at Yarralumla .
+
+Group ID 355 | Size: 3
+  - Blair himself took the reins of the Labour Party after its leader John Smith died of a heart attack in 1994 .
+  - Mr Blair became Labour leader in 1994 after the then leader , John Smith , died of a heart attack .
+  - Blair took over the Labour Party when his predecessor John Smith died of a heart attack in 1994 .
+
+Group ID 390 | Size: 3
+  - For the week , the Russell 2000 , the barometer of smaller company stocks , advanced 11.92 , or 2.5 percent , closing at 497.42 .
+  - The Russell 2000 index , which tracks smaller company stocks , was up 1.02 , or 0.21 percent , at 496.83 .
+  - The Russell 2000 index , the barometer of smaller company stocks , rose 3.28 , or 0.7 percent , to 494.20 .
+
+Group ID 397 | Size: 4
+  - The other 18 people inside the building -- two visitors and 16 employees , including Harrison 's ex-girlfriend -- escaped unharmed , Aaron said .
+  - The other 18 people inside the building - two visitors and 16 employees , including Harrison 's ex-girlfriend - escaped unharmed , Aaron said .
+  - The other 18 people inside the building - two visitors and 16 employees , including Harrison 's ex-girlfriend - escaped without injury , Aaron said .
+  - The other 18 people in the building , including Harrison 's ex-girlfriend , were not injured , police spokesman Don Aaron said .
+
+Group ID 416 | Size: 3
+  - Hoffa , 62 , vanished on the afternoon of July 30 , 1975 , from a Bloomfield Township parking lot in Oakland County , about 25 miles north of Detroit .
+  - Hoffa , 62 , vanished on the afternoon of July 30 , 1975 , from a parking lot in a Detroit suburb in Oakland County .
+  - Hoffa , 62 , vanished the afternoon of July 30 , 1975 , from a parking lot in Oakland County , about 25 miles north of Detroit .
+
+Group ID 423 | Size: 3
+  - " My judgment is 95 percent of that information should be declassified , become uncensored , so the American people would know . "
+  - My judgment is 95 percent of that information could be declassified , become uncensored so the American people would know , " Mr. Shelby said on NBC 's " Meet the Press . "
+  - " My judgement is 95 percent of that information should be declassified , become uncensored , so the American people would know . "
+
+Group ID 436 | Size: 3
+  - Bond also voiced his disappointment that neither President Bush nor his brother attended this conference in Florida or last year 's in Texas .
+  - Bond voiced disappointment that neither President Bush nor his brother attended the 2002 conference in Texas or the 2003 meeting in Florida .
+  - Bond also voiced his disappointment that neither President Bush nor his brother attended this conference in Florida or last year 's conference in Texas .
+
+Group ID 437 | Size: 3
+  - Emmy and Golden Globe Award-winners James Brolin and Judy Davis star as Ronald and Nancy Reagan in The Reagans .
+  - James Brolin and Judy Davis play Ronald and Nancy Reagan in the CBS film .
+  - The film stars James Brolin as Mr. Reagan and Judy Davis as Mrs. Reagan .
+
+Group ID 454 | Size: 3
+  - Three such vigilante-style attacks forced the hacker organiser , who identified himself only as " Eleonora67 ] , " to extend the contest until 8am ( AEST ) today .
+  - Three such vigilante-style attacks forced the hacker organizer , who identified himself only as " Eleonora67 , " to extend the contest until 6 p.m. EDT Sunday .
+  - Three such vigilante-style attacks forced the hacker organizer , who identified himself only as " Eleonora [ 67 ] , " to extend the contest until 3 p.m. Arizona time Sunday .
+
+Group ID 458 | Size: 3
+  - In Canada , Tim Hortons ' same-store sales were up as much as 6.7 per cent .
+  - U.S. same-store sales last months at Tim Hortons rose 8.8 per cent .
+  - Tim Hortons ' same-store sales in Canada rose by 6.7 per cent .
+
+Group ID 487 | Size: 3
+  - United already has paid the city $ 34 million in penalties for missing the first round of employment targets .
+  - United already has paid the city $ 34 million in penalties for not meeting the first round of employment targets .
+  - United has paid $ 34 million in penalties for failing to meet employment targets .
+
+Group ID 496 | Size: 3
+  - The fight over online music sales was disclosed in documents made available Monday by the court .
+  - The fight about online music sales was disclosed in documents filed last week with the judge and made available by the court Monday .
+  - The fight over online music sales was disclosed in documents filed last week with the judge and made available by the court yesterday .
+
+Group ID 498 | Size: 3
+  - " We have found the smoking gun , " said Hubbard , director of NASA 's Ames Research Center in California .
+  - " We have found the smoking gun , " investigating board member Scott Hubbard said .
+  - " We have found the smoking gun , " board member Scott Hubbard said .
+
+Group ID 499 | Size: 3
+  - The Democratic Republic of Congo 's war began in 1998 when Uganda and Rwanda invaded together to back rebels trying to topple Kinshasa .
+  - Congo 's many-sided war began in 1998 when Uganda and Rwanda invaded to back rebels fighting to topple the government in Kinshasa .
+  - Congo 's war began in 1998 when Uganda and Rwanda invaded to back rebels fighting to topple the central government .
+
+Group ID 506 | Size: 3
+  - Vaccine makers have been thrust into the limelight as government programs to encourage wider vaccination and fears of biological attacks on civilian and military targets .
+  - Vaccine makers have been thrust into the limelight as government programs encourage wider vaccination amid fears of biological attacks .
+  - Vaccine makers have been thrust in the limelight following government programmes to encourage wider vaccination and fears of biological attacks on civilian and military targets .
+
+Group ID 515 | Size: 3
+  - Lakhani , 68 , is charged with attempting to provide material support and resources to terrorists and acting as an arms broker without a license .
+  - Lakhani was charged with attempting to provide material support and resources to a terrorist group and acting as an arms broker without a license .
+  - He was charged with attempting to provide material support and resources to terrorists , and dealing arms without a licence .
+
+Group ID 524 | Size: 3
+  - Legal experts said the case may mark the first time a parent has been convicted of contributing to a child 's suicide .
+  - Experts said the case marks one of the first times in which a parent was charged with contributing to a child 's suicide .
+  - Legal experts say the case may mark the first time a parent has been convicted of contributing to a child 's suicide .
+
+Group ID 527 | Size: 3
+  - Baer said he had concluded that lawyers for the two victims " have shown , albeit barely ... that Iraq provided material support to bin Laden and al-Qaeda " .
+  - Judge Harold Baer concluded Wednesday that lawyers for the two victims " have shown , albeit barely ... that Iraq provided material support to bin Laden and al-Qaida . "
+  - " I conclude that plaintiffs have shown , albeit barely ... that Iraq provided material support to Bin Laden and Al Qaeda , " Baer said .
+
+Group ID 534 | Size: 3
+  - It said a civil complaint by the Securities and Exchange Commission is expected as well .
+  - Stewart also faces a separate investigation by the Securities and Exchange Commission .
+  - It also said it expects a civil complaint by the Securities and Exchange Commission .
+
+Group ID 563 | Size: 3
+  - The fire has so far charred 11,400 acres on Mount Lemmon just north of Tucson , and more than 250 homes have been destroyed .
+  - The Aspen fire had charred more than 12,400 acres by Monday on Mount Lemmon just north of Tucson and more than 250 homes had been destroyed .
+  - The Aspen Fire had charred more than 12,400 acres by today on Mount Lemmon just north of Tucson , and more than 250 homes had been destroyed .
+
+Group ID 575 | Size: 3
+  - CELF said IBM is pursuing membership and plans to be an active participant in the forum .
+  - IBM is pursuing membership and plans to be an active participant in the CELF , according to various members of CELF .
+  - IBM is also " pursuing membership in the group " and plans to be an active participant , according to the CELF statement .
+
+Group ID 577 | Size: 3
+  - The FBI is trying to determine when White House officials and members of the vice president 's staff focused on Wilson and learned about his wife 's employment .
+  - The FBI is trying to determine when White House officials and members of the vice president ’ s staff first focused on Wilson and learned about his wife ’ s employment at the agency .
+  - The FBI is trying to determine when White House officials and members of the vice president 's staff first focused on Wilson and learned about his wife 's employment at the CIA .
+
+Group ID 597 | Size: 3
+  - Big Blue says the SEC calls the action a fact-finding investigation and has not reached any conclusions related to this matter .
+  - The SEC specifically advised IBM that this is a fact-finding investigation and that it has not reached any conclusions related to this matter .
+  - The SEC specifically advised IBM that this is a fact-finding investigation and that it has not reached any conclusions related to this matter , IBM said in a statement .
+
+Group ID 616 | Size: 3
+  - The problem likely will mean corrective changes before the shuttle fleet starts flying again .
+  - He said the problem needs to be corrected before the space shuttle fleet is cleared to fly again .
+  - He said the prob lem needs to be corrected before the space shuttle fleet flies again .
+
+Group ID 617 | Size: 4
+  - " We make no apologies for finding every legal way possible to protect the American public from further terrorist attacks , " she said .
+  - " We make no apologies for finding every legal way possible to protect the American public from further terrorist attack , " said Barbara Comstock , Justice Department spokeswoman .
+  - " We make no apologies for finding every legal way possible to protect the American public from further terrorist attack , " Barbara Comstock said .
+  - " We make no apologies for finding every legal way possible to protect the American public from further terrorist attacks , " said Barbara Comstock , Ashcroft 's press secretary .
+
+Group ID 618 | Size: 3
+  - Since March 11 , when the market 's major indices were at their lowest levels since hitting multi-year lows in October , the tech-laden Nasdaq has climbed nearly 20 per cent .
+  - Since March 11 , when the markets major indexes were at their lowest levels since hitting multiyear lows in October , the tech-laden Nasdaq has climbed nearly 20 percent .
+  - Since March 11 , when the market 's major indexes were at their lowest levels since hitting multi-year lows in October , the Nasdaq has barreled back 21.2 percent .
+
+Group ID 621 | Size: 3
+  - After their arrests , sources said the men admitted they were smuggled into Washington state from Canada in July .
+  - After their arrests , the men told investigators they paid to be smuggled into Blaine , Wash . , from Canada last month , two sources said .
+  - After their arrests , the men told investigators they paid to be smuggled into the United States from Canada last month .
+
+Group ID 625 | Size: 4
+  - Dynes will be paid $ 395,000 a year ; Atkinson 's salary is $ 361,400 .
+  - Dynes will get $ 395,000 a year , an increase over Atkinson 's current salary of $ 361,400 .
+  - He will be paid $ 395,000 per year , up from Atkinson 's current salary of $ 361,400 .
+  - In his new position , Dynes will earn $ 395,000 , a significant increase over Atkinson 's salary of $ 361,400 .
+
+Group ID 626 | Size: 3
+  - Schering-Plough shares fell 72 cents to close at $ 18.34 on the New York Stock Exchange .
+  - The shares fell 72 cents , or 3.8 percent , to $ 18.34 Monday on the New York Stock Exchange .
+  - Schering-Plough shares fell 3.8 percent , or 72 cents , to close at $ 18.34 in trading Monday on the New York Stock Exchange .
+
+Group ID 628 | Size: 3
+  - Ernest Bucklew was headed home for his mother 's funeral in Pennsylvania .
+  - One , Fort Carson-based Sgt. Ernest Bucklew , 33 , was on his way home to attend his mother 's funeral in Pennsylvania , relatives said .
+  - Sgt. Ernest Bucklew , 33 , was coming home from Iraq to bury his mother in Pennsylvania .
+
+Group ID 629 | Size: 3
+  - " Although the preconditions for recovery remain in place , the prospect for external demand for UK output is weaker than previously expected . "
+  - He continued , " although the preconditions for recovery remain in place , " prospects for British exports were " weaker than previously expected . "
+  - And " although the preconditions for recovery remain in place , " it said the prospects for British exports were " weaker than previously expected . "
+
+Group ID 675 | Size: 3
+  - " September and third-quarter data confirm that demand in the global semiconductor market is rising briskly , " George Scalise , the SIA 's president , said in the statement .
+  - " September and third quarter data confirm that demand in the global semiconductor market is rising briskly , " stated SIA President George Scalise , in a statement .
+  - " September and third quarter data confirm that demand in the global semiconductor market is rising briskly , " said George Scalise , president of the SIA .
+
+Group ID 685 | Size: 3
+  - Jackson , 45 , posted a $ 3 million bond and returned to Las Vegas , where he is filming a music video .
+  - He was released on $ 3-million bail and immediately returned to Las Vegas , where he had been filming a video .
+  - After posting $ 3 million bail , Jackson flew to Las Vegas , where he had been working on a video .
+
+Group ID 692 | Size: 3
+  - The Standard & Poor 's 500 Index shed 5.20 , or 0.6 percent , to 924.42 as of 9 : 33 a.m. in New York .
+  - The broader Standard & Poor 's 500 Index .SPX edged down 9 points , or 0.98 percent , to 921 .
+  - The broader Standard & Poor 's 500 Index < .SPX > edged down 9 points , or 0.98 percent , to 921 .
+
+Group ID 704 | Size: 3
+  - As of Monday , there were 66 probable cases in and around Toronto , a city of 4 million people .
+  - As of Wednesday , there were 65 probable SARS cases in the Toronto region .
+  - The number of probable cases dropped to 64 on Tuesday from 66 on Monday in and around Toronto , a city of four million people .
+
+Group ID 711 | Size: 3
+  - A month ago , the Commerce Department said GDP grew at a 7.2 percent rate .
+  - A month ago , the Commerce Department estimated that GDP had a grown at a 7.2 percent rate in the third quarter .
+  - A month ago , the Commerce Department estimated that GDP had grown at a 7.2 percent rate in the third quarter .
+
+Group ID 721 | Size: 3
+  - When the manager let him in the apartment , Brianna was in her mother 's bedroom lying in a baby 's bathtub , covered with a towel and watching cartoons .
+  - When a manager let him into the apartment , the youngster was lying in a baby 's bathtub , covered with a towel and was watching a TV cartoon channel .
+  - When a manager let him into the apartment , the youngster was in a baby 's bathtub , covered with a towel and watching a TV cartoon channel .
+
+Group ID 726 | Size: 3
+  - Jordan Green , O 'Brien 's private attorney , said he had no comment .
+  - Jordan Green , the prelate 's private lawyer , said he had no comment .
+  - O 'Brien 's attorney , Jordan Green , declined to comment .
+
+Group ID 729 | Size: 3
+  - " Dan brings to Coca-Cola enormous experience in managing some of the world 's largest and most familiar brands , " Mr. Heyer said .
+  - " Dan brings to Coca-Cola enormous experience in managing some of the world 's largest and most familiar brands , " Heyer said in a statement .
+  - In a statement , Heyer said , " Dan brings to Coca-Cola enormous experience in managing some of the world 's largest and most familiar brands .
+
+Group ID 779 | Size: 3
+  - PC-related products were the strongest sector in July , with microprocessors up 5.6 % and DRAMs up 8.2 % from June , the industry group said .
+  - PC-related products were the strongest sellers , with microprocessors up 5.6 percent and DRAMs up 8.2 percent , the SIA said .
+  - In July , PC-related products were the strongest sector with microprocessors up 5.6 per cent and DRAMs up 8.2 per cent over June .
+
+Group ID 789 | Size: 3
+  - Minister Saud al-Faisal visit was disclosed Monday by two administration officials who discussed it on condition of not being identified by name .
+  - Minister Saud al-Faisal 's visit was disclosed by two administration officials , who spoke on condition of anonymity .
+  - Minister Saud al-Faisal 's visit was disclosed Monday by two administration officials who discussed it on condition of not being identified by name .
+
+Group ID 809 | Size: 3
+  - Gerry Kiely , a EU agriculture representative in Washington , said EU ministers were invited but canceled because the union is closing talks on agricultural reform .
+  - The EU 's agriculture representative in Washington said EU ministers were invited but canceled because the union is wrapping up talks on agricultural reform .
+  - EU ministers were invited to the conference but canceled because the union is closing talks on agricultural reform , said Gerry Kiely , a EU agriculture representative in Washington .
+
+Group ID 826 | Size: 3
+  - Police spokesman Brig. Gen. Edward Aritonang confirmed Saturday that another two had been arrested , one in Jakarta and another in Magelang , Central Java .
+  - Brigadier General Edward Aritonang , a police spokesman , confirmed yesterday that another two had been arrested , one in Jakarta and another in Magelang , Central Java .
+  - Police spokesman Brigadier-General Edward Aritonang confirmed that another two men had been arrested yesterday , one in Jakarta and another in Magelang in central Java .
+
+Group ID 839 | Size: 3
+  - Lee told the newspaper that the girl had dragged the food , toys and other things into her mother 's bedroom , where he found her .
+  - Lee said Brianna had dragged food , toys and other things into the bedroom .
+  - Lee , 33 , said the girl had dragged the food , toys and other things into her mother 's bedroom .
+
+Group ID 854 | Size: 3
+  - The PCs are scattered across the United States , Canada and South Korea .
+  - The computers were reportedly located in the U.S. , Canada and South Korea .
+  - The computers were located in the United States , Canada , and South Korea .
+
+Group ID 874 | Size: 3
+  - The dollar gained against the euro , yen and Swiss franc after September U.S. retail sales figures came in slightly weaker than consensus forecasts .
+  - The greenback rose steeply against the euro , yen and Swiss franc despite weaker-than-expected September U.S. retail sales figures .
+  - The greenback scored beefy gains against the euro , yen and Swiss franc despite weaker-than-expected September U.S. retail sales figures .
+
+Group ID 903 | Size: 3
+  - He hugged his lawyers and their assistants and then said , " Thank you so much . "
+  - Moments later , he hugged his defense lawyers , softly saying , " Thank you , so much . "
+  - The 60-year-old millionaire hugged his attorneys , saying : " Thank you so much . "
+
+Group ID 904 | Size: 3
+  - The department also sent water and soil samples to the state health laboratory .
+  - Water samples are being sent to the state health department for analysis .
+  - Water samples are being tested in a state lab to determine what caused the reaction .
+
+Group ID 921 | Size: 3
+  - In the interview , Janet Racicot said she heard the thud from the kitchen , where she was getting a glass of water early Saturday morning .
+  - Janet Racicot heard the thud from the kitchen , where she was getting a glass of water , she said in an interview Tuesday .
+  - His wife , Janet , said she heard the thud from the kitchen , where she was getting a glass of water .
+
+Group ID 927 | Size: 3
+  - " With the target funds rate at 1 percent , substantial further conventional easings could be implemented if the FOMC judged such policy actions warranted , " he said .
+  - Furthermore , with the target fed funds rate at 1 percent , " substantial further conventional easings could be implemented if the FOMC judged such policy actions warranted . "
+  - " Furthermore , with the target funds rate at 1 per cent , substantial further conventional easings could be implemented if the FOMC judged such policy actions warranted , " he said .
+
+Group ID 928 | Size: 3
+  - " It was to fly a plane into the White House , " Karas said .
+  - It was to fly a plane in the White House . "
+  - " It was to fly a plane into the White House , " Mr. Karas said .
+
+Group ID 929 | Size: 3
+  - Wal-Mart , Kohl 's Corp. , Family Dollar Stores Inc . , and Big Lots Inc. were among the merchants posting May sales that fell below Wall Street 's modest expectations .
+  - Wal- Mart , Kohl 's Corp. , Family Dollar Stores Inc . , and Big Lots Inc. posted May sales that fell below Wall Street 's modest expectations .
+  - Wal-Mart , Kohl 's Corp. and Big Lots Inc. were among the merchants posting May sales below Wall Street 's modest expectations .
+
+Group ID 936 | Size: 3
+  - Peterson was arrested near Torrey Pines Golf Course in La Jolla on April 18 , the same the day the bodies were identified through DNA testing .
+  - Peterson was arrested near Torrey Pines Golf Course in La Jolla on April 18 , the day DNA testing identified the bodies .
+  - Peterson , 30 , was arrested in La Jolla April 18 after the two bodies were identified through DNA tests .
+
+Group ID 947 | Size: 3
+  - The Dow Jones industrials climbed more than 140 points to above the 9,000 mark for the first time since December .
+  - The Dow Jones industrials climbed more than 140 points to above the 9,000 mark , the first time since December .
+  - The Dow Jones industrials briefly surpassed the 9,000 mark for the first time since December . "
+
+Group ID 959 | Size: 3
+  - His daughter , Nina Axelrod , told The Associated Press that he died in his sleep , apparently of heart failure .
+  - Axelrod died in his sleep of heart failure , said his daughter , Nina Axelrod .
+  - Axelrod died of heart failure while asleep at his Los Angeles home , said his daughter , Nina Axelrod .
+
+Group ID 972 | Size: 3
+  - The blue-chip Dow Jones industrial average < .DJI > slipped 44.32 points , or 0.48 percent , to 9,240.25 .
+  - The blue-chip Dow Jones industrial average .DJI edged down 28.08 points , or 0.3 percent , at 9,256.49 .
+  - The Dow Jones industrial average closed down 18.06 , or 0.2 per cent , at 9266.51 .
+
+Group ID 975 | Size: 3
+  - Those who ejaculated more than five times a week were a third less likely to develop serious prostate cancer in later life .
+  - He found that men who had ejaculated more than five times a week in their 20s were a third less likely to develop aggressive prostate cancer later in life .
+  - Those in their twenties who ejaculated more than five times a week were one-third less likely to develop aggressive prostate cancer later in life , they say .
+
+Group ID 998 | Size: 3
+  - His dissent was joined by Chief Justice William H. Rehnquist and Justice Clarence Thomas .
+  - Chief Justice William H. Rehnquist and Justices Antonin Scalia and Clarence Thomas dissented .
+  - Chief Justice William Rehnquist and Justice Clarence Thomas were the two other dissenting judges .
+
+Group ID 1000 | Size: 3
+  - Justice Anthony Kennedy dissented in an opinion joined by Chief Justice William Rehnquist and Justices Antonin Scalia and Clarence Thomas .
+  - He was joined by Chief Justice William H. Rehnquist and Justices Antonin Scalia and Clarence Thomas .
+  - Justice Anthony M. Kennedy dissented in an opinion joined by Chief Justice William H. Rehnquist and Justices Antonin Scalia and Clarence Thomas .
+
+Group ID 1023 | Size: 3
+  - " This blackout was largely preventable , " Energy Secretary Spencer Abraham said at a press conference this afternoon .
+  - " This blackout was largely preventable , " U.S. Energy Secretary Spencer Abraham said at a briefing on the report .
+  - " This blackout was largely preventable , " said Spencer Abraham , US energy secretary .
+
+Group ID 1025 | Size: 3
+  - The suit is to be filed against Secretary of State Kevin Shelley and election officials in Los Angeles , Orange and San Diego counties .
+  - The lawsuit names Shelley , a Democrat , and registrars in Los Angeles , Orange and San Diego counties .
+  - It names Shelley , Los Angeles County Registrar of Voters Conny McCormack , and registrars in Orange and San Diego counties as defendants .
+
+Group ID 1028 | Size: 3
+  - Early voting will run weekdays from 8 a.m. to 5 p.m. through Sept . 9 .
+  - Early voting polls will be open from 7 a.m. to 7 p.m. Sept . 8 and Sept . 9 .
+  - Additionally , early voting will be conducted from 1 to 6 p.m. Sept . 7 .
+
+Group ID 1032 | Size: 3
+  - His 1996 Chevrolet Tahoe was found abandoned in a Virginia Beach , Va . , parking lot June 25 .
+  - His 1996 Chevrolet Tahoe was found abandoned June 25 in a Virginia Beach , Va . , parking lot .
+  - His sport utility vehicle was found June 25 , abandoned without its license plates in Virginia Beach , Va .
+
+Group ID 1055 | Size: 3
+  - Another million barrels , bought by Spanish refiner Cepsa SA , was to be loaded onto a Spanish tanker , the Sandra Tapias .
+  - Another million barrels , bought by Spanish refiner Cepsa SA , was to be loaded onto a Spanish tanker , Sandra Tapias .
+  - A Spanish tanker , Sandra Tapias , was to be loaded with another million barrels , bought by Spanish refiner Cepsa SA , in the afternoon .
+
+Group ID 1069 | Size: 3
+  - Mr. Bankhead said the crime scenes indicated that the killer was " very methodical . "
+  - GBI spokesman John Bankhead said the murder scenes showed that the killer was very methodical .
+  - Georgia Bureau of Investigation spokesman John Bankhead said the crime scenes indicated that the killer was " very methodical . "
+
+Group ID 1076 | Size: 4
+  - " The United States welcomes a greater NATO role in Iraq 's stabilization , " Powell said .
+  - " The United States welcomes a greater NATO role in Iraq 's stabilization , " Mr. Powell told his colleagues in a speech today .
+  - " The United States welcomes a greater NATO role in Iraq 's stabilisation , " Powell said , according to the text of prepared remarks seen by Reuters .
+  - " The United States welcomes a greater NATO role in Iraq 's stabilization , " Mr. Powell said in a speech to fellow NATO ministers .
+
+Group ID 1078 | Size: 3
+  - Conway called the move " atrociously bad behaviour from a company with a history of atrociously bad behaviour . "
+  - PeopleSoft CEO Craig Conway has described Oracle 's $ 5.1 billion bid as " atrociously bad behaviour from a company with a history of atrociously bad behaviour " .
+  - He characterized the hostile bid as " atrociously bad behavior from a company with a history of atrociously bad behavior . "
+
+Group ID 1129 | Size: 4
+  - About 18 percent of men taking finasteride developed prostate cancer , compared with 24 percent on placebo .
+  - They found that 6.4 percent of men on finasteride had high-grade tumors , compared with 5.1 percent taking a placebo .
+  - More than 6 percent of men on the drug developed high-grade tumors compared with 5.1 percent on placebo .
+  - They found that 6.4 percent of men on finasteride had high-grade tumors , compared to 5.1 percent taking a placebo .
+
+Group ID 1130 | Size: 3
+  - " This new division will be focused on the vitally important task of protecting the nation 's cyber assets so that we may best protect the nation 's critical infrastructure assets . "
+  - " This new division will be focused on the vitally important task of protecting the nation 's cyber assets so that we may best protect the nation ’ s critical infrastructure assets . "
+  - " This new division will be focused on the vitally important task of protecting the nation 's cyberassets so that we may best protect the nation 's critical infrastructure assets , " he added .
+
+Group ID 1161 | Size: 3
+  - About 25 governments have signed in the last four months , about half of those in the last three weeks .
+  - About 25 countries have signed in the past four months , and about half of those have been signed in the past few weeks .
+  - According to the State Department list , about 25 nations have signed bilateral agreements in the past four months , about half in the past three weeks .
+
+Group ID 1180 | Size: 3
+  - This decision would " throw a monkey wrench into the FCC 's efforts to develop a vitally important national broadband policy , " he said .
+  - FCC Chairman Michael Powell said in a statement that the ruling would " throw a monkey wrench into the FCC 's efforts to develop a vitally important national broadband policy . "
+  - He added that the decision will " throw a monkey wrench into the FCC 's efforts to develop a vitally important national broadband policy . "
+
+Group ID 1197 | Size: 3
+  - Compared with the same quarter last year , Cisco earned $ 729 million , or 10 cents a share , on revenue of $ 4.82 billion .
+  - During the fiscal second quarter , Cisco earned $ 991 million , or 14 cents a share , on sales of $ 4.7 billion .
+  - Cisco reported earnings of $ 987 million , or 14 cents a share , on revenue of $ 4.62 billion for the quarter ending in April .
+
+Group ID 1241 | Size: 3
+  - As part of the agreement to extradite the two best friends from Canada , prosecutors agreed not to seek the death penalty .
+  - As part of a 2001 agreement to extradite them from Canada , prosecutors agreed not to seek the death penalty .
+  - As part of the agreement to extradite the two best friends from Canada , prosecutors agreed not to seek the death penalty for convictions .
+
+Group ID 1257 | Size: 3
+  - France , Russia , China and even staunch ally Britain had advocated a stronger U.N. role , which they said was needed to give a U.S.-backed Iraqi authority international legitimacy .
+  - France , Russia , China and others had advocated a stronger U.N. role to give a U.S.-chosen Iraqi authority international legitimacy .
+  - Russia , along with France , China and others , advocate a stronger U.N. role to give a U.S.-chosen Iraqi authority international legitimacy .
+
+Group ID 1291 | Size: 4
+  - " Of course I want to win again , but I think is worse when you never won before because you are very anxious , " he says .
+  - " Of course , I want to win again , but it is worse when you have never won because you are anxious , " he said .
+  - " Of course I want to win again but I think it 's worse when you 've never won , because you are so anxious to win . "
+  - " Of course , I want to win again , but I think it 's worse when you have never won because you get anxious .
+
+Group ID 1303 | Size: 4
+  - Law enforcement sources who spoke on condition of anonymity confirmed to The Associated Press that Limbaugh was being investigated by the Palm Beach County state attorney 's office .
+  - Law enforcement officials confirmed that Limbaugh was being investigated by the Palm Beach County , Fla . , state attorney 's office .
+  - Law enforcement sources who spoke on condition of anonymity confirmed that Limbaugh was being investigated by the Palm Beach County , Fla . , state attorney 's office .
+  - Law enforcement sources who spoke on condition of anonymity confirmed to The Associated Press that Limbaugh was being investigated by the Palm Beach County , Fla . , state attorney 's office .
+
+Group ID 1306 | Size: 3
+  - The CBO analysis of the Senate package said an amendment sponsored by Sen. Maria Cantwell , D-Wash . , accounted for $ 40 billion of the total cost .
+  - The budget office said one provision of the Senate bill accounted for $ 40 billion of the cost .
+  - Officials said one provision in the Senate-passed measure accounted for $ 40 billion over 10 years in the CBO calculation .
+
+Group ID 1347 | Size: 5
+  - They face charges of robbery and criminal impersonation of a police officer .
+  - All five suspects were charged with robbery and criminal impersonation of a police officer .
+  - Five 17-year-olds have been charged with robbery and impersonating a police officer .
+  - All five were charged with robbery and criminal impersonation of a police officer .
+  - The teens are being held on charges of robbery and criminal impersonation of a police officer , sources said .
+
+Group ID 1349 | Size: 3
+  - Southwest said it completed inspections of its entire fleet of 385 aircraft and found no additional items .
+  - Southwest , the largest U.S. discount airline , said Friday that inspections of its fleet of 385 planes had found no additional items .
+  - Southwest said it had already inspected its fleet of 385 aircraft and found no additional suspicious items .
+
+Group ID 1350 | Size: 3
+  - Media giant Vivendi Universal has given itself two weeks to sift through offers for its U.S. entertainment empire in a multi-billion dollar auction of some of Hollywood 's best-known assets .
+  - Media moguls jostled for position as the deadline for bids for Vivendi Universal 's U.S. entertainment empire neared on Monday in an auction of some of Hollywood 's best-known assets .
+  - Media giant Vivendi Universal EAUG.PA V.N set to work sifting through bids for its U.S. entertainment empire on Monday in a multibillion-dollar auction of some of Hollywood 's best-known assets .
+
+Group ID 1356 | Size: 3
+  - Its legal representatives began meeting with plaintiffs ' attorneys last week to discuss a settlement .
+  - Attorneys for both the archdiocese and the plaintiffs began meeting last week to reach the out-of-court settlement .
+  - Attorneys for the Roman Catholic archdiocese and nearly 250 alleged victims began meeting last week to reach an out-of-court settlement .
+
+Group ID 1358 | Size: 3
+  - Werdegar also said Intel 's servers weren 't harmed by the computer messages and the thousands of recipients were able to request that the E-mails stop , which Hamidi honored .
+  - Werdegar also said Intel 's servers were not harmed by the computer messages and the thousands of recipients were able to request that the e-mails stop , which Hamidi honored .
+  - She also noted that Intel 's servers were not harmed and that the thousands of Hamidi e-mail recipients were able to request that the e-mails stop , which Hamidi honored .
+
+Group ID 1361 | Size: 3
+  - Microsoft has won a patent for an instant messaging feature that notifies users when the person they are communicating with is typing a message .
+  - Microsoft has been awarded a patent for a feature in instant messaging that alerts a user when the person they are communicating with is inputting a message .
+  - Microsoft has been awarded a patent on a popular instant-messaging feature that shows users when the person on the other end of the conversation is typing a message .
+
+Group ID 1383 | Size: 3
+  - Bush said that he ordered the Treasury Department to freeze the assets after the suicide bombing in Jerusalem that killed 20 people Tuesday .
+  - Mr. Bush said he was taking the action in response to Hamas 's claim of responsibility for the bus bombing in Israel on Tuesday that killed 20 people .
+  - Bush said in a statement that he ordered the U.S. Treasury Department to act following Tuesday 's suicide bombing attack in Jerusalem , which killed 20 people .
+
+Group ID 1388 | Size: 3
+  - Paul Durousseau , 30 , was charged Tuesday with murder in five slayings between December and February , and also is suspected of a 1997 killing in the state of Georgia .
+  - Paul Durousseau , 32 , was charged Tuesday with murder in five Jacksonville slayings between December and February , and in a 1997 Georgia killing .
+  - Paul Durousseau , 30 , was charged with murder in five Jacksonville slayings between December and February , and is also suspected of a 1997 Georgia killing .
+
+Group ID 1391 | Size: 3
+  - Dotson admitted to FBI agents that he shot Dennehy in the head " because Patrick had tried to shoot him , " according to an arrest warrant released Tuesday .
+  - According to an arrest warrant released Tuesday , Dotson admitted to FBI agents that he shot Dennehy in the head " because Patrick had tried to shoot him . "
+  - Dotson , 21 , admitted to FBI agents that he shot Dennehy in the head " because Patrick had tried to shoot him , " according to an arrest warrant released yesterday .
+
+Group ID 1396 | Size: 3
+  - The Rev. Christopher Coyne , spokesman for the archdiocese , did not immediately return several calls seeking comment .
+  - A call to Rev. Christopher Coyne , the spokesman for the archdiocese , was not immediately returned .
+  - The Rev. Christopher J. Coyne , spokesman for the archdiocese , wouldn 't comment Friday .
+
+Group ID 1436 | Size: 3
+  - The jury verdict , reached Wednesday after less than four hours of deliberation , followed a 2 1 / 2 week trial , during which Waagner represented himself .
+  - The quick conviction followed a 2 1 / 2 week trial , during which the Venango County man represented himself .
+  - The quick conviction followed a 21 / 2-week trial , during which Waagner represented himself .
+
+Group ID 1486 | Size: 3
+  - No charges have been filed in those deaths , but Luzerne County District Attorney David Lupas said authorities were " continuing to make significant progress " in the case .
+  - No charges have been filed in the deaths of the other victims ; Lupas said authorities were making progress in the case .
+  - No charges have been filed in those deaths , but prosecutor David Lupas said authorities were making progress in the case .
+
+Group ID 1515 | Size: 3
+  - Analysts surveyed by Reuters Research expected earnings of 13 cents a share on revenue of $ 6.7 billion , on average .
+  - Analysts currently expect earnings of 13 cents a share and revenue of $ 6.7 billion , on average , according to a survey by Reuters Research .
+  - Analysts have predicted third-quarter earnings of 16 cents a share and revenue of $ 7.15 billion , on average .
+
+Group ID 1528 | Size: 3
+  - The broad Standard & Poor 's 500 Index .SPX was up 8.79 points , or 0.96 percent , at 929.06 .
+  - The Standard & Poor 's 500 index rose 11.14 , or 1.2 percent , to 931.41 . "
+  - The Standard & Poor 's 500 Index gained 10.89 , or 1.2 percent , to 931.12 as of 12 : 01 p.m. in New York .
+
+Group ID 1576 | Size: 3
+  - " You know I have always tried to be honest with you and open about my life , " Limbaugh , 52 , said during a stunning admission aired nationwide .
+  - " You know I have always tried to be honest with you and open about my life , " Limbaugh said Friday on his program .
+  - " You know I have always tried to be honest with you and open about my life , " Limbaugh said during a stunning admission aired nationwide .
+
+Group ID 1609 | Size: 3
+  - Tehran has said it will only sign the protocol if a ban on imports of peaceful Western nuclear technology is lifted .
+  - Tehran has made clear it will only sign the Additional Protocol introducing such inspections if a ban on the import of civilian Western nuclear technology is lifted .
+  - Tehran has made it clear it will only sign the protocol if a ban on imports of peaceful Western nuclear technology is lifted .
+
+Group ID 1664 | Size: 3
+  - A nationally known computer hacker is being sought on a federal arrest warrant stemming from a sealed complaint in New York , a federal defender in California said Friday .
+  - SACRAMENTO A nationally known itinerant computer hacker faces a federal arrest warrant on a sealed federal complaint in New York , a federal defender in California said Friday .
+  - A nationally known itinerant computer hacker faces a federal arrest warrant on a sealed federal complaint in New York , a federal defender in California said Friday .
+
+Group ID 1759 | Size: 3
+  - The findings were published in the July 1 issue of the Annals of Internal Medicine .
+  - The findings are being published today in the Annals of Internal Medicine .
+  - The findings are published in the July 1st issue of the Annals of Internal Medicine .
+
+Group ID 1762 | Size: 3
+  - A picture of the doctor 's son holding the guitar appeared in the National Enquirer just two weeks after George died .
+  - A photograph of the doctor 's son holding the guitar appeared in the National Enquirer two weeks after Harrison 's death .
+  - A photograph of the doctor 's son , Ariel , holding the guitar appeared in the National Enquirer two weeks after Harrison 's death .
+
+Group ID 1771 | Size: 3
+  - For the full year period ending June 30 , 2003 , high-speed lines increased by 45 percent .
+  - For the full 12-month period , high-speed cable modem connections increased by 49 percent .
+  - For the full 12-month period ending June 30 , advanced services lines of all technology types increased by 56 percent .
+
+Group ID 1803 | Size: 3
+  - The blue-chip Dow Jones industrial average .DJI jumped 118 points , or 1.36 percent , to 8,829 .
+  - The blue-chip Dow Jones industrial average < .DJI > jumped 118 points , or 1.36 percent , to 8,829 .
+  - In morning trading , the Dow Jones industrial average was up 121.51 , or 1.4 percent , at 8,832.69 .
+
+Group ID 1811 | Size: 3
+  - The court today reversed the decision of that court , the United States Court of Appeals for the Ninth Circuit .
+  - The court Monday reversed the decision of that court , the 9th U.S. Circuit Court of Appeals .
+  - The court on Monday reversed the decision of that court , the 9th U.S. Circuit Court of Appeals .
+
+Group ID 1853 | Size: 3
+  - Doctors have speculated that estrogen protects against cell damage and improves blood flow .
+  - Their belief was based on speculation that estrogen prevents cell damage and improves blood flow .
+  - Doctors have speculated that the body 's own estrogen protects against cell damage and improves blood flow .
+
+Group ID 1979 | Size: 3
+  - " We acted because we saw the evidence in a dramatic new light , through the prism of our experience on 9 / 11 . "
+  - " We acted because we saw the evidence in a dramatic new light - through the prism of our experience on 9-11 . "
+  - " We acted because we saw the existing evidence in a new light , through the prism of ... Sept . 11th . "
+
+Group ID 2298 | Size: 3
+  - " The reasons behind the increase in incidence are more complex and we are only just beginning to understand the risk factors , " he said .
+  - He said there were complex reasons for the increased numbers of cases and scientists were only just beginning to understand the risk factors .
+  - However , he said , The reasons behind the increase in incidence are more complex and were just beginning to understand the risk factors .
+

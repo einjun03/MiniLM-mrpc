@@ -1,162 +1,109 @@
-print("loading imports...")
-import wandb
-from datasets import load_dataset
+import argparse
 import os
-from pprint import pprint
-#import numpy as np
-print("loading sentence transformer imports...")
-from sentence_transformers import SentenceTransformer, SentenceTransformerTrainer, SentenceTransformerTrainingArguments
-#from scipy.stats import spearmanr
-print("loaded 1/3")
-from sentence_transformers.losses import CoSENTLoss, CosineSimilarityLoss
-print("loaded 2/3")
-from sentence_transformers.evaluation import EmbeddingSimilarityEvaluator
-print("loaded 3/3")
+import wandb
+from models import RetrievalModel
+from sentence_transformers import (
+    SentenceTransformer, 
+    SentenceTransformerTrainingArguments
+)
+from datasets import load_dataset
 
-class EmbeddingModel:
+def setup_wandb(run_name=None):
+    os.environ["WANDB_PROJECT"] = "minilm-mrpc-retrieval"
+    # Allow custom run names for better experiment tracking
+    wandb.init(project="minilm-mrpc-retrieval", name=run_name)
+
+def main():
+    parser = argparse.ArgumentParser(description="Fine-tune MiniLM on MRPC with IR Evaluation")
     
-    def __init__(self, model, dataset, loss='CoSENTLoss', debug=False, seed=42):
+    # Hyperparameters
+    parser.add_argument("--epochs", type=int, default=4)
+    parser.add_argument("--lr", type=float, default=2e-5)
+    parser.add_argument("--batch_size", type=int, default=32)
+    parser.add_argument("--warmup_ratio", type=float, default=0.1)
+    parser.add_argument("--margin", type=float, default=0.5, help="Margin for OnlineContrastiveLoss")
+    parser.add_argument("--output_dir", type=str, default="../models/finetune-mrpc-ir")
+    
+    # Eval & Save Strategy
+    parser.add_argument("--eval_steps", type=int, default=50)
+    parser.add_argument("--save_limit", type=int, default=2)
+    
+    # Dataset Repos
+    parser.add_argument("--train_repo", type=str, default="nyu-mll/glue") 
+    parser.add_argument("--eval_repo", type=str, default="ejun26/mrpc-clean-retrieval-v2")
+    
+    # Debug & Tracking
+    parser.add_argument("--debug", action="store_true", help="Run a fast sanity check with tiny data")
+    parser.add_argument("--run_name", type=str, default=None, help="Custom name for WandB run")
+    parser.add_argument("--use_wandb", action="store_true", help="Enable Weights & Biases logging")
 
-        self.dataset = dataset
+    # Hugging Face Hub
+    parser.add_argument("--push_to_hub", action="store_true", help="Push the trained model to Hugging Face Hub")
+    parser.add_argument("--hub_model_name", type=str, default=None, help="Repo name on HF Hub (e.g. 'username/model-name')")
 
-        self.train_dt = self.create_dataset('train')
+    args_cmd = parser.parse_args()
 
-        self.debug = debug
-        if self.debug:
-            #running to sanity check
-            self.train_dt = self.train_dt.shuffle(seed=seed).select(range(50))
-        
-        self.test_dt = self.create_dataset('test')
-        self.val_dt = self.create_dataset('validation')
-
-        self.model = model
-        if loss == 'CoSENTLoss':
-            self.loss_fn = CoSENTLoss(self.model)
-        elif loss == 'CosineSimilarityLoss':
-            self.loss_fn = CosineSimilarityLoss(self.model)
-        else:
-            raise Exception("Invalid Loss Function")
-
-    def create_dataset(self, split, rename={"sentence1": "text1", "sentence2": "text2"}):
-        dt = load_dataset(*self.dataset, split=split)
-        return dt.rename_columns(rename).remove_columns(['idx'])
-
-    def train(self, args):
-        evaluator = EmbeddingSimilarityEvaluator(
-            sentences1=self.val_dt['text1'],
-            sentences2=self.val_dt['text2'],
-            scores=self.val_dt['label'],
-            name='mrpc-eval'
-        )
-
-        #evaluate on the val set before training
-        print("Pre-train val set results:")
-        #os.makedirs("./val_logs", exist_ok=True)  # ← Create directory
-        res = evaluator(self.model)
-        pprint(res)
-
-        # 7. Create a trainer & train
-        trainer = SentenceTransformerTrainer(
-            model=self.model,
-            args=args,
-            train_dataset=self.train_dt,
-            eval_dataset=self.val_dt,
-            loss=self.loss_fn,
-            evaluator=evaluator,
-        )
-        trainer.train()
-
-    def eval(self, stage="pretrain"):
-        os.makedirs("./test_logs", exist_ok=True)  # ← Create directory
-        evaluator = EmbeddingSimilarityEvaluator(
-            sentences1=self.test_dt['text1'],
-            sentences2=self.test_dt['text2'],
-            scores=self.test_dt['label'],
-            name=f"mrpc-test-{stage}"
-        )
-
-        pprint("Test set results:")
-        #evaluate on the test set before training
-        res = evaluator(self.model, output_path="./test_logs")
-        pprint(res)
-
-def setup_wandb():
-    os.environ["WANDB_PROJECT"]="minilm-finetune"
-    os.environ["WANDB_LOG_MODEL"]="true"
-    os.environ["WANDB_WATCH"]="false"
-
-if __name__ == '__main__':
-    #print("loading dataset...")
-    #ds = load_dataset("SetFit/mrpc")
-    #print("loading model...")
+    # 1. Initialize model
     model = SentenceTransformer('all-MiniLM-L6-v2')
-    print("loaded model")
 
-    debugging = False
+    # 2. Configure Training Arguments
+    training_args = SentenceTransformerTrainingArguments(
+        output_dir=args_cmd.output_dir,
+        num_train_epochs=args_cmd.epochs,
+        learning_rate=args_cmd.lr,
+        per_device_train_batch_size=args_cmd.batch_size,
+        warmup_ratio=args_cmd.warmup_ratio,
+        
+        # Strategy: Evaluate and Save every X steps instead of every epoch
+        eval_strategy="steps",
+        eval_steps=args_cmd.eval_steps,
+        save_strategy="steps",
+        save_steps=args_cmd.eval_steps,
+        save_total_limit=args_cmd.save_limit,
+        
+        # Checkpointing logic
+        load_best_model_at_end=True,
+        metric_for_best_model="mrpc-validation-retrieval_cosine_mrr@10",
+        greater_is_better=True,  # Crucial: MRR is "higher is better"
+        
+        report_to="wandb" if args_cmd.use_wandb else "none",
+        run_name=args_cmd.run_name,
+        logging_steps=10,
+    )
 
-    if debugging: 
-        args = SentenceTransformerTrainingArguments(
-            output_dir="models/debug/finetuned-mrpc",
-            num_train_epochs=20,
-            per_device_train_batch_size=8, # number of samples/batch
-            learning_rate=1e-4,
-            warmup_ratio=0.0,
-            eval_strategy="no",
-            save_strategy="no",
-            logging_steps=3, #log for each batch
-            report_to="none"
-        )
-    else:
-        NUM_EPOCHS = 5
-        LEARNING_RATE = 2e-5
-        BATCH_SIZE = 16
-        args = SentenceTransformerTrainingArguments(
-            output_dir="models/finetune-mrpc",
-            report_to="wandb",
-            load_best_model_at_end=True, # Load best checkpoint at end
-            metric_for_best_model="eval_loss",
-            greater_is_better=False,  # Lower loss is better
-            num_train_epochs=NUM_EPOCHS,
-            per_device_train_batch_size=BATCH_SIZE,
-            learning_rate=LEARNING_RATE,
-            eval_strategy="epoch",
-            logging_strategy="epoch",
-            warmup_ratio=0.1
-        )
+    # 3. Load ORIGINAL training data
+    print(f"Loading original training data from {args_cmd.train_repo}...")
+    train_ds = load_dataset(args_cmd.train_repo, "mrpc", split="train")
+
+    rename={"sentence1": "text1", "sentence2": "text2"}
+    train_ds = train_ds.rename_columns(rename).remove_columns(['idx'])
+
+    # Ensure labels are floats for OnlineContrastiveLoss
+    train_ds = train_ds.map(lambda x: {"label": float(x["label"])})
+
+    if args_cmd.debug:
+        print("🛠️ DEBUG MODE: Shuffling and selecting 100 samples.")
+        train_ds = train_ds.shuffle(seed=42).select(range(100))
+        training_args.num_train_epochs = 1
+    if args_cmd.use_wandb and not args_cmd.debug:
+        setup_wandb(args_cmd.run_name)
+
+    # 4. Initialize Pipeline and Start Training
+    # (The RetrievalModel uses your custom IR evaluator internally)
+    pipeline = RetrievalModel(model, train_ds, args_cmd.eval_repo, debug=args_cmd.debug, margin=args_cmd.margin)
     
-        setup_wandb()
-        wandb.init(project="minilm-finetune") 
-        wandb.init(
-            project="minilm-finetune",
-            config={
-                "learning_rate": LEARNING_RATE,
-                "epochs": NUM_EPOCHS,
-                "batch_size": BATCH_SIZE,
-                "loss": "CoSENTLoss",
-                "model": "all-MiniLM-L6-v2",
-                "dataset": "MRPC"
-            }
-        )
+    print("Starting Training...")
+    pipeline.train(training_args)
+    
+    print("Running Final Test...")
+    pipeline.test()
 
-    ds = ["nyu-mll/glue", "mrpc"]
-    embd_model = EmbeddingModel(model, ds, debug=debugging)
-    embd_model.eval()
-    embd_model.train(args)
-    embd_model.eval(stage="post-train")
-    model = embd_model.model
-    model.save_pretrained("models/finetune-mrpc/final")
-    model.push_to_hub("miniLM-mrpc-finetune")
-    wandb.finish()
+    # 5. Push to Hugging Face Hub
+    if args_cmd.push_to_hub:
+        if not args_cmd.hub_model_name:
+            raise ValueError("--hub_model_name is required when using --push_to_hub")
+        print(f"Pushing model to Hugging Face Hub: {args_cmd.hub_model_name}")
+        model.push_to_hub(args_cmd.hub_model_name)
 
-"""
-Pre-training 
-
-Evaluation Results: 0.386307988532814 | p_value: 1.6860126991028433e-62
-
-Correlation factor is between -1, 1 where -1.0 is perfectly negative relationship and 1.0 is perfectly positive relationship
-Correlation factor 0.3 < x < 0.5 implies weak - bad signaling
-
-p value: probability that the correlation happened by random chance
-p < 0.05: Correlation is statistically significant (not random)
-p > 0.05: Correlation could be by chance/random
-"""
+if __name__ == "__main__":
+    main()

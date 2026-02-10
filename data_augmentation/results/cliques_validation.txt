@@ -1,0 +1,18 @@
+=== MRPC VALIDATION CLIQUES (Size > 2) ===
+Total Large Groups: 3
+
+Group ID 16 | Size: 3
+  - " Instead of pursuing the most imminent and real threats – international terrorism – this Bush administration chose to settle old scores , " Mr. Graham said .
+  - " Instead of pursuing the most imminent and real threats - international terrorists , " Graham said , " this Bush administration chose to settle old scores . "
+  - " Instead of pursuing the most imminent and real threats - international terrorists - this Bush administration has chosen to settle old scores , " Graham said .
+
+Group ID 50 | Size: 3
+  - Peterson , a former fertilizer salesman , is charged with murder in the deaths of his 27-year-old wife and the baby boy she was carrying .
+  - Peterson , 31 , is now charged with murder in the deaths of his 27-year-old wife and their unborn son .
+  - Peterson , 31 , is charged with two counts of first-degree murder in the slayings of his wife , Laci , and their unborn son , Conner .
+
+Group ID 227 | Size: 3
+  - The hearing is to determine whether there is enough evidence to order Akbar to a general court-martial proceeding .
+  - The hearing , expected to last a week , will determine whether Akbar faces a court-martial .
+  - The purpose of the hearing is to determine whether Akbar should be court-martialled .
+
